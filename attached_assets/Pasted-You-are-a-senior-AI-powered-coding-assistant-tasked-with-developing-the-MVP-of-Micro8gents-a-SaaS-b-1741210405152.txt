@@ -1,0 +1,69 @@
+You are a senior AI-powered coding assistant tasked with developing the MVP of Micro8gents, a SaaS-based AI Voice Assistant for SMEs. The system should be modular, scalable, and cloud-based. The MVP will include:
+
+✅ Twilio integration for VOIP call handling
+✅ 11 Labs integration for AI-powered voice responses
+✅ n8n automation workflows for customer interaction and task execution
+✅ Front-End Portal (SME Dashboard) in React.js for business owners
+✅ Back-End API in Node.js/FastAPI to handle business logic and multi-tenant support
+✅ PostgreSQL Database for storing SME business details, bookings, and call logs
+✅ Stripe/PayPal Integration for SaaS subscription management
+
+1. Backend Development (Node.js / FastAPI)
+Tasks:
+
+Set up a multi-tenant SaaS architecture allowing multiple SME accounts
+Implement RESTful APIs for:
+SME onboarding (sign-up, login, business details configuration)
+Call handling and AI response generation
+Booking creation, modification, and cancellation
+Report generation for SME owners
+Subscription management via Stripe API
+Configure Twilio API for call routing
+Integrate 11 Labs API for AI-generated voice responses
+Connect to n8n webhook endpoints for task automation
+Secure API endpoints with JWT authentication & role-based access control
+Store data in PostgreSQL, including:
+SME profiles, services, and preferences
+Call logs and booking transactions
+AI-generated reports
+2. Front-End Development (React.js / Next.js)
+Tasks:
+
+Develop a SME Dashboard with:
+Business Setup Page (Name, location, working hours, services, FAQs)
+Call Logs & Customer Inquiries Page (Live updates of handled calls)
+Booking Management Page (View, modify, or cancel reservations)
+Reports Page (Downloadable insights, graphs, and analytics)
+Subscription & Billing Page (Plan upgrades, payment history, usage analytics)
+Ensure responsive UI design for desktop & mobile
+Implement real-time data updates using WebSockets or polling
+3. AI & Automation (Twilio, 11 Labs, n8n)
+Tasks:
+
+Develop n8n workflows for:
+Call intent detection (Information, Booking, Reporting)
+Booking & scheduling automation
+Report generation & email delivery
+Integrate Twilio Voice API for phone call reception
+Configure 11 Labs Voice API for generating AI-powered responses
+4. Subscription & SaaS Model (Stripe / PayPal)
+Tasks:
+
+Implement Stripe API for:
+Monthly/annual subscriptions
+Plan upgrades & downgrades
+Automated invoicing & billing management
+Set up Webhooks for payment status updates
+5. Deployment & Infrastructure (AWS / DigitalOcean)
+Tasks:
+
+Deploy backend on AWS Lambda (serverless) or DigitalOcean Droplets
+Host frontend on Vercel / Netlify
+Use PostgreSQL (managed instance) for scalable data storage
+Implement CI/CD pipeline with GitHub Actions for automated deployment
+Deliverables:
+GitHub Repository with well-documented code
+Postman API Collection for testing endpoints
+Live Demo (Deployed MVP)
+Admin Credentials for testing SME Dashboard
+Basic User Guide explaining setup & usage
